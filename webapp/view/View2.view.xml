@@ -1,0 +1,11 @@
+<mvc:View controllerName="training.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout">
+    <Page id="page2" title="View2" showNavButton="true" navButtonPress="OnPressButton">
+    <content>
+    
+
+    </content>
+    </Page>
+</mvc:View>

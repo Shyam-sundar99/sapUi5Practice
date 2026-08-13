@@ -1,0 +1,9 @@
+<mvc:View controllerName="training.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Shell id="_IDGenShell" >
+      <App id="app"></App>
+    </Shell> 
+    
+</mvc:View>

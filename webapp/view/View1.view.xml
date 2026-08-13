@@ -1,0 +1,109 @@
+<mvc:View controllerName="training.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" >
+    <Page id="page" title="{i18n>title}">
+    <content>
+     <f:SimpleForm title="Employee Details" editable="true" labelSpanL="2" labelSpanM="2" emptySpanL="4" emptySpanM="4">
+       <f:content>
+        <Label  text="Employee Id" required="true"></Label>
+        <Input id="EmpId"></Input>
+        <Label text="Employee Name" required="true"></Label>
+        <Input id="EmpName"></Input>
+        <Label text="Employee Desigination"></Label>
+        <Input ></Input>
+        <Label text="Employee Email" required="true"></Label>
+        <Input id="EmpEmail"></Input>
+        <Label text="Employee salary"></Label>
+        <Input ></Input>
+       
+       </f:content>
+     
+     </f:SimpleForm>
+
+     <!-- <ObjectHeader title="Shyam" number="10,00,000" numberUnit="INR" backgroundDesign="Solid">
+      <attributes>
+        <ObjectAttribute text="1001" title="Employee Id"></ObjectAttribute>
+        <ObjectAttribute text="Software" title="Desigination"></ObjectAttribute>
+      </attributes>
+      <statuses>
+      <ObjectStatus text="perminent" state="Success" ></ObjectStatus>
+      </statuses>
+     </ObjectHeader> -->
+    <!-- <FlexBox justifyContent="Center" alignItems="Center" fitContainer="true">
+      <Button text="Ok" ></Button>
+    </FlexBox> -->
+    <!-- <f:SimpleForm title="Employee Details" editable="true" layout="ResponsiveGridLayout" 
+    labelSpanL="5" labelSpanM="5" columnsL="3" columnsM="3">
+    <f:content>
+  <core:Title text="Basic Info"></core:Title>
+    <Label text="Employee Id" ></Label>
+    <VBox >
+     <Input ></Input>
+     <Button text="OK" type="Default" press="OnClick" class="sapUiLargeMarginleft"></Button>
+     </VBox>
+     <Label text="Employee Name" ></Label>
+     <Input ></Input>
+     <core:Title text="More Info"></core:Title>
+     <Label text="Employee Desigination" ></Label>
+     <Input ></Input>
+     <Label text="Employee Skills" ></Label>
+     <Input ></Input>
+     <core:Title text="Contact Info"></core:Title>
+     <Label text="Employee Email" ></Label>
+     <Input ></Input>
+     <Label text="Employee Phone"></Label>
+     <Input ></Input>
+     </f:content>
+     </f:SimpleForm> -->
+    <!-- <Panel headerText="Employee Details" expandable="true" expanded="false" >
+     <l:Grid defaultSpan="L2 M2" vSpacing="0" >
+     <l:content>
+     <Label text="Employee Id" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Name" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Desigination" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Skills" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Salary" class="sapUiTinyMarginTop"></Label>
+     <Input ></Input>
+     <Label text="Employee Surname"></Label>
+     <Input ></Input>
+     </l:content>
+     </l:Grid>
+     </Panel>
+     <Panel headerText="Employee Family Details" expandable="true" expanded="false">
+     <l:Grid defaultSpan="L2 M2" vSpacing="0" >
+     <l:content>
+     <Label text="Employee FamilyId"></Label>
+     <Input ></Input>
+     <Label text="Employee FamilyName"></Label>
+     <Input ></Input>
+     <Label text="Employee Village"></Label>
+     <Input ></Input>
+     <Label text="Employee Father Work"></Label>
+     <Input ></Input>
+     <Label text="Employee Father Salary"></Label>
+     <Input ></Input>
+     <Label text="Employee Father Surname"></Label>
+     <Input ></Input>
+     </l:content>
+     </l:Grid>
+     </Panel> -->
+     <!-- <Button id="Idbutton" text="GO" press="onPress" class="sapUiSmallMarginright" type="Emphasized"></Button> -->
+    </content>
+   <footer>
+      <Bar >
+        <contentRight>
+        <Button id="SubmitButtonId" text="Submit" type="Emphasized" press="onPress"></Button>
+        <Button text="Cancel" type="Reject"></Button>
+        </contentRight>
+      </Bar>
+   </footer>
+    
+    </Page>
+</mvc:View>
