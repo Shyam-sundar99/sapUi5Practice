@@ -7,6 +7,23 @@ sap.ui.define([
         return Controller.extend("training.controller.View1", {
             onInit() {
             },
+            onPress: function(){
+                var empId = this.getView().byId("empid").getValue();
+                var empName = this.getView().byId("empname").getValue();
+                var empDesg = this.getView().byId("empdesg").getValue();
+                var empEmail = this.getView().byId("empemail").getValue();
+                var empSalary = this.getView().byId("empsalary").getValue();
+
+                var oModel = this.getOwnerComponent().getModel();
+                oModel.setProperty("/Empid", empId);
+                oModel.setProperty("/Empname", empName);
+                oModel.setProperty("/Empdesig", empDesg);
+                oModel.setProperty("/Empemail", empEmail);
+                oModel.setProperty("/Empsalary", empSalary);
+
+
+                this.getOwnerComponent().getRouter().navTo("RouteView2");
+            }
             // onPress: function(){
             //     var name = this.getView().byId("Idinput").getValue();
             //     var welcomeMSG = "welcome to SAP" + " "+name;
@@ -14,28 +31,36 @@ sap.ui.define([
             //    this.getView().byId("Idbutton").setType("Accept");
             //    //this.getOwnerComponent().getRouter().navTo("RouteView2");
             // }
-            onPress: function () {
-                var Empid = this.getView().byId("EmpId").getValue();
-                var EmpName = this.getView().byId("EmpName").getValue();
-                var EmpEmail = this.getView().byId("EmpEmail").getValue();
+            //onPress: function () {
+                // var Empid = this.getView().byId("EmpId").getValue();
+                // var EmpName = this.getView().byId("EmpName").getValue();
+                // var EmpEmail = this.getView().byId("EmpEmail").getValue();
+                // var EmpDesigination = this.getView().byId("EmpDesigination").getValue();
+                // var EmpSalary = this.getView().byId("EmpSalary").getValue();
 
+                
+                // if (Empid === "" || EmpName === "" || EmpEmail === "" ){
 
-                if(Empid === ""){
-                    this.getView().byId("EmpId").setValueState("Error");
-                    this.getView().byId("EmpId").setValueStateText("please fill this field")
-                }else{
-                    this.getView().byId("EmpId").setValueState("None");
-                }
-                if (Empid === "" || EmpName === "" || EmpEmail === "@gmail" ){
-                     MessageBox.error("please fill the all required field");
-                    
-                }else if(EmpEmail === "@gmail"){
-                     
-                    this.getOwnerComponent().getRouter().navTo("RouterView3");
-                }else{
-                    this.getOwnerComponent().getRouter().navTo("RouteView2");
-                }
-            
+                //     if(Empid === ""){
+                //     this.getView().byId("EmpId").setValueState("Error");
+                //     this.getView().byId("EmpId").setValueStateText("please fill this field");
+                // } else{
+                //     this.getView().byId("EmpId").setValueState("None");
+                // }
+                //      MessageBox.error("please fill the all required field");
+                // };
+                // var oModel = this.getOwnerComponent().getModel();
+
+                //  oModel.setProperty("/EmpId", Empid);
+                //  oModel.setProperty("/EmpName", EmpName);
+                //  oModel.setProperty("/EmpDesigination", EmpDesigination1);
+                //  oModel.setProperty("/EmpEmail", EmpEmail);
+                // oModel.setProperty("/EmpSalary", EmpSalary);
+
+                // this.getOwnerComponent().getRouter().navTo("RouteView2");
+
+                 
+
                 
                 
                 //if (Empid === ""){
@@ -50,6 +75,5 @@ sap.ui.define([
                    // MessageBox.error("please fill the all required fields");
                     
                 //}
-            }
-        });
+            });
     });

@@ -1,11 +1,35 @@
 <mvc:View controllerName="training.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    xmlns:layout="sap.ui.layout">
+    xmlns:layout="sap.ui.layout"
+    xmlns:f ="sap.ui.layout.form">
     <Page id="page2" title="View2" showNavButton="true" navButtonPress="OnPressButton">
     <content>
-    
+      <f:SimpleForm title="Employee Details">
+       <f:content>
+       <Label  text="Employee Id" ></Label>
+        <Text id="TexId" textAlign="Begin"></Text>
+        <Label text="Employee Name"  ></Label>
+        <Text id="TexName" textAlign="Begin"></Text>
+        <Label text="Employee Desigination"></Label>
+        <Text id="TexDesig" textAlign="Begin" ></Text>
+        <Label text="Employee Email" ></Label>
+        <Text id="TexEmail" textAlign="Begin"></Text>
+        <Label text="Employee salary"></Label>
+        <Text id="TexSalary" textAlign="Begin"></Text>
+       </f:content>
+      
+      
+      </f:SimpleForm>
+      
 
     </content>
+    <footer>
+    <Bar >
+    <contentRight>
+    <Button text="Ok" type="Accept" press="onClick"></Button>
+    </contentRight>
+    </Bar>
+    </footer>
     </Page>
 </mvc:View>

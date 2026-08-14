@@ -9,15 +9,15 @@
      <f:SimpleForm title="Employee Details" editable="true" labelSpanL="2" labelSpanM="2" emptySpanL="4" emptySpanM="4">
        <f:content>
         <Label  text="Employee Id" required="true"></Label>
-        <Input id="EmpId"></Input>
+        <Input id="empid"></Input>
         <Label text="Employee Name" required="true"></Label>
-        <Input id="EmpName"></Input>
-        <Label text="Employee Desigination"></Label>
-        <Input ></Input>
+        <Input id="empname"></Input>
+        <Label text="Employee Designation"></Label>
+        <Input id="empdesg"></Input>
         <Label text="Employee Email" required="true"></Label>
-        <Input id="EmpEmail"></Input>
+        <Input id="empemail"></Input>
         <Label text="Employee salary"></Label>
-        <Input ></Input>
+        <Input id="empsalary" ></Input>
        
        </f:content>
      

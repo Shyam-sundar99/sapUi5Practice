@@ -4,7 +4,7 @@
     xmlns:layout="sap.ui.layout">
     <Page id="page3" title="View3" showNavButton="true" navButtonPress="OnPressButton1">
     <content>
-    
+      <Text text="Thanks for Visit" class="sapMH1FontSize" textAlign="Center"></Text>
 
     </content>
     </Page>

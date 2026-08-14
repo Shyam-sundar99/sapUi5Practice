@@ -1,0 +1,37 @@
+[
+  {
+    "EmpId": "1001",
+    "Name": "John",
+    "Salary": "50000"
+  },
+  {
+    "EmpId": "1002",
+    "Name": "David",
+    "Salary": "60000"
+  },
+  {
+    "EmpId": "1003",
+    "Name": "Mike",
+    "Salary": "70000"
+  },
+  {
+    "EmpId": "1004",
+    "Name": "nick",
+    "Salary": "70000"
+  },
+  {
+    "EmpId": "1005",
+    "Name": "dlieep",
+    "Salary": "90000"
+  },
+  {
+    "EmpId": "1006",
+    "Name": "Miketyson",
+    "Salary": "20000"
+  },
+  {
+    "EmpId": "1007",
+    "Name": "Sanju",
+    "Salary": "80000"
+  }
+]

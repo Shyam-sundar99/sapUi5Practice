@@ -14,7 +14,16 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.30.0",
       "toolsId": "34d38ae2-0a53-45b7-aab8-003f3e2d099d"
-    }
+    },
+     "dataSources": {
+         "mainService": {
+          "uri": "/sap/opu/odata/sap/ZEMPLOYEE_SRV/",
+          "type": "OData",
+          "settings": {
+            "odataVersion": "2.0"
+          }
+         }
+     }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -46,6 +55,10 @@
       "cozy": true
     },
     "models": {
+      "":{
+        "dataSource": "mainService",
+        "preload": true
+      },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {

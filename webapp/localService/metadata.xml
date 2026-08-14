@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<edmx:Edmx
+ xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+ Version="1.0">
+
+ <edmx:DataServices>
+
+  <Schema Namespace="EmployeeService"
+   xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+
+   <EntityType Name="Employee">
+
+    <Key>
+      <PropertyRef Name="EmpId"/>
+    </Key>
+
+    <Property Name="EmpId" Type="Edm.String" Nullable="false"/>
+    <Property Name="Name" Type="Edm.String"/>
+    <Property Name="Salary" Type="Edm.String"/>
+
+   </EntityType>
+
+   <EntityContainer Name="Container">
+
+    <EntitySet
+      Name="Employees"
+      EntityType="EmployeeService.Employee"/>
+
+   </EntityContainer>
+
+  </Schema>
+
+ </edmx:DataServices>
+
+</edmx:Edmx>
