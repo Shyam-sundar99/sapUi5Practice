@@ -1,0 +1,33 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="multipleuielements.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+    <f:SimpleForm id="_IDGenSimpleForm" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="2" emptySpanM="2">
+    <f:content>
+     <Text id="_IDGenText" text="I am View1" textAlign="Center"></Text>
+     <Label id="_IDGenLabel" text="name of the Employee"></Label>
+     <Input id="_IDGenInput" ></Input>
+     <Label id="_IDGenLabel1" text="Select a relation"></Label>
+     <Select id="_IDGenSelect" items="{/oRelation}">
+      <core:Item id="_IDGenItem" text="{relation}"></core:Item>
+       
+     </Select>
+     <Label id="_IDGenLabel2" text="select Desigination"></Label>
+     <ComboBox id="_IDGenComboBox" items="{/oDesiginations}">
+     <core:Item id="_IDGenItem1" text="{desigination}"></core:Item>
+     </ComboBox>
+     <Label id="_IDGenLabel3" text="select Languages" ></Label>
+     <MultiComboBox id="_IDGenMultiComboBox" items="{/aLanguages}">
+     <core:Item id="_IDGenItem2" text="{language}"></core:Item>
+     </MultiComboBox>
+     <Label id="_IDGenLabel4" text="Select a gender" ></Label>
+     <RadioButtonGroup id="_IDGenRadioButtonGroup" buttons="{/aGender}" columns="2" >
+     <RadioButton id="_IDGenRadioButton" text="{gender}"  ></RadioButton>
+     </RadioButtonGroup>
+     <Label id="_IDGenLabel5" text="Are you Married"></Label>
+     <CheckBox id="_IDGenCheckBox" ></CheckBox>
+    </f:content>
+    </f:SimpleForm>
+    </Page>
+</mvc:View>

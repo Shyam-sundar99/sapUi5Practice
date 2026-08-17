@@ -1,0 +1,59 @@
+{
+    "oRelation": [
+        {
+            "relation" : "Mother"
+        },
+        {
+            "relation" : "Father"
+        },
+        {
+            "relation" : "Brother"
+        },
+        {
+            "relation" : "Sister"
+        },
+        {
+            "relation" : "Aunt"
+        },
+        {
+            "relation" : "Wife"
+        }
+
+    ],
+    "oDesiginations" : [
+        {
+            "desigination" : "Software engineer"
+        },
+        {
+            "desigination" : " Senior Software engineer"
+        },
+        {
+            "desigination" : "Associate"
+        },
+        {
+            "desigination" : "Senior Associate"
+        }
+    ],
+    "aLanguages": [
+        {
+            "language" : "Telugu"
+        },
+        {
+            "language" : "English"
+        },
+        {
+            "language" : "Hindi"
+        },
+        {
+            "language" : "Freanch"
+        }
+    ],
+    "aGender" :[
+        {
+            "gender": "Male"
+        },
+        {
+            "gender":"Female"
+        }
+    ]
+}
